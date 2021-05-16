@@ -6,4 +6,8 @@
 
 ### Description
 
-This command line app is useful to visualize your spreadsheet expenses and incomes using CSV  
+This CLI is to visualize your expenses and incomes. It converts spreadsheet data through CSV to  a visual form
+
+### Roadmap
+
+- write logic to separate income and expense data
