@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main(List<String> args) {
   if (args.isEmpty) {
-    print('Usage: dart run data_processing.dart <inputFile.csv>');
+    print('Usage: dart run money_processing.dart <inputFile.csv>');
     exit(1);
   }
   const currency = 'UAH';
@@ -21,14 +21,15 @@ void main(List<String> args) {
         : expenseBy[category] = previousTotal + amount;
     totalExpense += amount;
   }
+  print('\n');
 
-  print(
-    'Total for all categories: ${totalExpense.toStringAsFixed(1)}$currency',
-  );
+  print('By categories:');
   for (final entry in expenseBy.entries) {
     final amountFormatted = entry.value.toStringAsFixed(1);
     final category = entry.key == '' ? 'Unallocated' : entry.key;
-    print('$category: $amountFormatted$currency');
+    print('$category: $amountFormatted $currency');
   }
+  print('\n');
+  print('Total: ${totalExpense.toStringAsFixed(1)} $currency');
   print('\n');
 }

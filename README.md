@@ -1,12 +1,10 @@
 # Money processor
 
-#### Money from CSV
-
 <img src="/images/screenshot.png"/>
 
-### Description
+## Description
 
-This CLI is to visualize your expenses and incomes. It converts spreadsheet data through CSV to  a visual form
+Check your expenses by category. Converts CSV to console output
 
 ### Roadmap
 
